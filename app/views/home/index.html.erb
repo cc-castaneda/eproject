@@ -1,0 +1,19 @@
+<h1>Home#index</h1>
+<% if user_signed_in? %>
+  <li>
+        <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+  </li>
+  <li>
+    <a href="/emaps"> Ir a Emaps  </a>
+    <a href="/admin"> Ir al Administrador  </a>
+  </li>
+   <li>
+    User:
+    <%= link_to('Login', new_user_session_path)  %>
+  </li>
+<% else %>
+   <li>
+    User:
+    <%= link_to('Login', new_user_session_path)  %>
+  </li>
+<% end %>

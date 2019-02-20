@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Emaps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Country</th>
+      <th>Type sys</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Capacity</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @emaps.each do |emap| %>
+      <tr>
+        <td><%= emap.name %></td>
+        <td><%= emap.description %></td>
+        <td><%= emap.country %></td>
+        <td><%= emap.type_sys %></td>
+        <td><%= emap.latitude %></td>
+        <td><%= emap.longitude %></td>
+        <td><%= emap.capacity %></td>
+        <td><%= link_to 'Show', emap %></td>
+        <td><%= link_to 'Edit', edit_emap_path(emap) %></td>
+        <td><%= link_to 'Destroy', emap, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Emap', new_emap_path %>

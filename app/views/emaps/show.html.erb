@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @emap.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @emap.description %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @emap.country %>
+</p>
+
+<p>
+  <strong>Type sys:</strong>
+  <%= @emap.type_sys %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @emap.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @emap.longitude %>
+</p>
+
+<p>
+  <strong>Capacity:</strong>
+  <%= @emap.capacity %>
+</p>
+
+<%= link_to 'Edit', edit_emap_path(@emap) %> |
+<%= link_to 'Back', emaps_path %>
