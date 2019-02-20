@@ -23,8 +23,10 @@ Things you may want to cover:
 
 * ...
 
-######
-#https://gist.github.com/mrilikecoding/9520502#file-gistfile1-txt-L14
+renergyproject.com :)
+
+# link
+https://gist.github.com/mrilikecoding/9520502#file-gistfile1-txt-L14
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 /bin/bash --login
@@ -67,8 +69,7 @@ rails g devise User
 
 rake db:migrate
 
-# create roles users for rails app
-# Eg.
+# create roles users for rails app ~> Eg.
 rails generate migration add_roles_to_users super_admin_role:boolean admin_role:boolean collaborator_role:boolean user_role:boolean
 
 # add defaults: false, true roles
@@ -84,8 +85,7 @@ rails g cancan:ability
 
 app/models/ability
 
-# MVC app ~> scaffold
-# eg.
+# MVC app ~> scaffold ~> eg.
 rails generate scaffold Emap name:string description:string country:string type_sys:string latitude:decimal longitude:decimal capacity:int
 
 app/controllers/name_controller.rb # ~> basic configurations
@@ -95,4 +95,10 @@ rake db:migrate
 rails generate controller Home index
 
 app/views/home/index.html.erb
+
+# ERRORS rails server
+bash: /usr/local/bin/rails: /usr/bin/ruby 2.5: bad interpreter: No such file or directory
+# fix
+/bin/bash --login
+rvm --rvmrc 2.6.1@eproject
 
