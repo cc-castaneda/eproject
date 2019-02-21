@@ -102,3 +102,11 @@ bash: /usr/local/bin/rails: /usr/bin/ruby 2.5: bad interpreter: No such file or 
 /bin/bash --login
 rvm --rvmrc 2.6.1@eproject
 
+# API KEY in google maps Rails
+add to API KEYS
+vim bin/rails credentials:edit
+
+if error
+rm config/credentials.yml.enc 
+
+~ > https://blog.ensalza.com/api-google-maps/
