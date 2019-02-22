@@ -3,17 +3,19 @@
 one:
   name: MyString
   description: MyString
+  address: MyString
   country: MyString
   type_sys: MyString
-  latitude: 9.99
-  longitude: 9.99
+  latitude: 1.5
+  longitude: 1.5
   capacity: 1
 
 two:
   name: MyString
   description: MyString
+  address: MyString
   country: MyString
   type_sys: MyString
-  latitude: 9.99
-  longitude: 9.99
+  latitude: 1.5
+  longitude: 1.5
   capacity: 1

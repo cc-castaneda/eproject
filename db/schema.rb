@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_20_162048) do
+ActiveRecord::Schema.define(version: 2019_02_22_201426) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,10 +18,11 @@ ActiveRecord::Schema.define(version: 2019_02_20_162048) do
   create_table "emaps", force: :cascade do |t|
     t.string "name"
     t.string "description"
+    t.string "address"
     t.string "country"
     t.string "type_sys"
-    t.decimal "latitude"
-    t.decimal "longitude"
+    t.float "latitude"
+    t.float "longitude"
     t.integer "capacity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -35,10 +36,10 @@ ActiveRecord::Schema.define(version: 2019_02_20_162048) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "super_admin_role"
-    t.boolean "admin_role"
-    t.boolean "collaborator_role"
-    t.boolean "user_role"
+    t.boolean "super_admin_role", default: false
+    t.boolean "admin_role", default: false
+    t.boolean "collaborator_role", default: false
+    t.boolean "user_role", default: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
