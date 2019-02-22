@@ -110,3 +110,9 @@ if error
 rm config/credentials.yml.enc 
 
 ~ > https://blog.ensalza.com/api-google-maps/
+
+# Geocoder gem
+https://medium.com/ruby-on-rails-development/geocoder-gem-34e15ee95086
+https://www.sitepoint.com/geocoder-display-maps-and-find-places-in-rails/
+https://riptutorial.com/ruby-on-rails/example/9575/geocode-the-model
+https://binarapps.com/blog/geocoder-a-way-rails-support-geocoding/
