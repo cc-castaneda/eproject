@@ -34,6 +34,9 @@
   <strong>Capacity:</strong>
   <%= @emap.capacity %>
 </p>
+<%= @emap.address %>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@emap.latitude}%2C#{@emap.longitude}" %>
+
 
 <%= link_to 'Edit', edit_emap_path(@emap) %> |
 <%= link_to 'Back', emaps_path %>
