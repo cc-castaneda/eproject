@@ -116,3 +116,11 @@ https://medium.com/ruby-on-rails-development/geocoder-gem-34e15ee95086
 https://www.sitepoint.com/geocoder-display-maps-and-find-places-in-rails/
 https://riptutorial.com/ruby-on-rails/example/9575/geocode-the-model
 https://binarapps.com/blog/geocoder-a-way-rails-support-geocoding/
+
+# enable geocoding API
+https://console.developers.google.com/apis/library/geocoding-backend.googleapis.com?project=sharp-terminal-232701
+
+# No me sirve porque la API de google maps no es gratis :(
+esta es una buena alternativa
+https://rubygems.org/gems/open_street_map
+

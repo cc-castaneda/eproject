@@ -4,7 +4,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.1'
 
 # maps
-gem 'geocoder'
 # Admin
 gem 'rails_admin', '~> 1.4', '>= 1.4.2'
 # authorization cancancan

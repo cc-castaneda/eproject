@@ -1,13 +1,6 @@
 class EmapsController < ApplicationController
   before_action :set_emap, only: [:show, :edit, :update, :destroy]
   
-  def get_locations
-    url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{params[:latitude]},#{params[:longitude]}&radius=500&key=#{Rails.application.secrets.google_places_key}"
-    http_call = open(url).read
-    response = JSON.parse(http_call, {:symbolize_names => true})
-    @emap = response[:results]
-  end
-
   # GET /emaps
   # GET /emaps.json
   def index
@@ -17,6 +10,7 @@ class EmapsController < ApplicationController
   # GET /emaps/1
   # GET /emaps/1.json
   def show
+    @emap = Emap.find(params[:id])
   end
 
   # GET /emaps/new
